@@ -1,3 +1,30 @@
-body {
-    background-color: #000000;
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #2589e6;
+}
+.flexcontainer {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.button {
+    width: 100px;
+    height: 75px;
+    margin-top: 25px;
+    background: linear-gradient(45deg, #03f00e, #d9ff00);
+    border-radius: 50px;
+    box-shadow: 3px 3px 3px 3px #223622;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
