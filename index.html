@@ -4,25 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>ZvukoButtons</title>
 </head>
 <body>
-    <div class="container">
-        <div class="flexcontainer">
-            <button onclick="play()" class="button">Button</button>
-            <button onclick="play2()" class="button">Button</button>
-            <button onclick="play3()" class="button">Button</button>
-            <button onclick="play4()" class="button">Button</button>
-            <button onclick="play5()" class="button">Button</button>
-            <button onclick="play6()" class="button">Button</button>
-            <button onclick="play7()" class="button">Button</button>
-            <button onclick="play8()" class="button">Button</button>
-            <button onclick="play9()" class="button">Button</button>
-            <button onclick="play10()" class="button">Button</button>
-            <button onclick="play11()" class="button">Button</button>
-            <button onclick="play12()" class="button">Button</button>
+    <div class="content">
+        <div id='area' class="text-area">
+            <button onclick='savePassword()' id='save' class="save">Save</button>
+            <button onclick='removePassword()' id='remove' class="remove">Remove</button>
+        </div>
+        <div class="menu-container">
+            <p class="title">ZvukoButtons</p>
+            <div onclick="click_button()" class="button-menu">
+                <div class="center-line"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="flexcont">
+                <button onclick="play()" class="button"><p class="p-button">О, Привет!</p></button>
+                <button onclick="play2()" class="button"><p class="p-button">Повезло</p></button>
+                <button onclick="play3()" class="button"><p class="p-button">Демотив
+                    атор</p></button>
+                <button onclick="play4()" class="button"><p class="p-button">Амогус</p></button>
+                <button onclick="play5()" class="button"><p class="p-button">Не пробил</p></button>
+                <button onclick="play6()" class="button"><p class="p-button">To be Continued</p></button>
+                <button onclick="play7()" class="button"><p class="p-button">Страшно</p></button>
+                <button onclick="play8()" class="button"><p class="p-button">Казахстан</p></button>
+                <button onclick="play9()" class="button"><p class="p-button">Бабабой</p></button>
+                <button onclick="play10()" class="button"><p class="p-button">Киборг уб***</p></button>
+                <button onclick="play11()" class="button"><p class="p-button">Бээээ</p></button>
+                <button onclick="play12()" class="button"><p class="p-button">Цитата</p></button> 
+                <button onclick="play13()" class="button"><p class="p-button">Просто похлопаю</p></button>
+                <button onclick="play14()" class="button"><p class="p-button">Миссия из GTA</p></button>
+                <button onclick="play15()" class="button"><p class="p-button">Жуткий крик</p></button>
+                <button onclick="play16()" class="button"><p class="p-button">Это фиаско</p></button>
+                <button onclick="play17()" class="button"><p class="p-button">Даладно</p></button>
+                <button onclick="play18()" class="button"><p class="p-button">Мне под
+                    сказывает</p></button>
+                <button onclick="play19()" class="button"><p class="p-button">Жёсткий стример</p></button>
+                <button onclick="play20()" class="button"><p class="p-button">Есть пробитие</p></button>
+                <button onclick="play21()" class="button"><p class="p-button">На нас напали</p></button> 
+                <button onclick="play22()" class="button"><p class="p-button">Есть пробитие</p></button> 
+            </div>
+
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
