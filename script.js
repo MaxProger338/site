@@ -1,15 +1,13 @@
 console.log('start', localStorage.getItem('password'));
-let password_str = 'lol338';
+let password_str = 'lol';
 
 if (localStorage.getItem('password') === 'false') {
-    print('while');
     while (true) {
         let password = prompt('Пароль'); 
         if (password === password_str) break;
     }
 } else {
     if (!(password_str === localStorage.getItem('password_str'))) {
-        print('while');
         while (true) {
             let password = prompt('Пароль'); 
             if (password === password_str) break;
@@ -28,123 +26,46 @@ function removePassword() {
     console.log('remove', localStorage.getItem('password'));
 }
 
-
-function play() {
-    const audio = new Audio('sounds/o-privet.mp3');
-    audio.play();
-}
-
-function play2() {
-    const audio = new Audio('sounds/povezlo-povezlo.mp3');
-    audio.play();
-}
-
-function play3() {
-    const audio = new Audio('sounds/tutututu-mem-demotivator.mp3');
-    audio.play();
-}
-
-function play4() {
-    const audio = new Audio('sounds/amogus.mp3');
-    audio.play();
-}
-
-function play5() {
-    const audio = new Audio('sounds/ne-probil.mp3');
-    audio.play();
-}
-
-function play6() {
-    const audio = new Audio('sounds/mem-okontsovka-filma-to-be-continued.mp3');
-    audio.play();
-}
-
-function play7() {
-    const audio = new Audio('sounds/strashno-ochen-strashno.mp3');
-    audio.play();
-}
-
-function play8() {
-    const audio = new Audio('sounds/kazahstan-ugrojaet-nam-bombordirovkoi.mp3');
-    audio.play();
-}
-
-function play9() {
-    const audio = new Audio('sounds/bababooey-sound-effect.mp3');
-    audio.play();
-}
-
-function play10() {
-    const audio = new Audio('sounds/rejisser-kiborg-ubiytsa.mp3');
-    audio.play();
-}
-
-function play11() {
-    const audio = new Audio('sounds/brue.mp3');
-    audio.play();
-}
-
-function play12() {
-    const audio = new Audio('sounds/luchshe-imet-druga.mp3');
-    audio.play();
-}
-
-function play13() {
-    const audio = new Audio('sounds/ya-prosto-pohlopayu.mp3');
-    audio.play();
-}
-
-function play14() {
-    const audio = new Audio('sounds/muzyika-s-proydennoy-missiey-iz-gta-san-andreas.mp3');
-    audio.play();
-}
-
-function play15() {
-    const audio = new Audio('sounds/jutkiy-krik.mp3');
-    audio.play();
-}
-
-function play16() {
-    const audio = new Audio('sounds/eto-fiasko-bratan.mp3');
-    audio.play();
-}
-
-function play17() {
-    const audio = new Audio('sounds/daladna.mp3');
-    audio.play();
-}
-
-function play18() {
-    const audio = new Audio('sounds/chto-to-mne-podskazyivaet.mp3');
-    audio.play();
-}
-
-function play19() {
-    const audio = new Audio('sounds/byistro-stuchit-po-klaviature.mp3');
-    audio.play();
-}
-
-function play20() {
-    const audio = new Audio('sounds/est-probitie.mp3');
-    audio.play();
-}
-
-function play21() {
-    const audio = new Audio('sounds/na-nas-napali.mp3');
-    audio.play();
-}
-
-function play22() {
-    const audio = new Audio('sounds/est-probitie.mp3');
-    audio.play();
-}
-
 const area = document.getElementById('area');
 const save = document.getElementById('save');
 const remove = document.getElementById('remove');
+
+let counter = 0;
+while (1) {
+    if (document.getElementById('cont-sound')) {
+        document.getElementById('cont-sound').id = 'cont-sound=';
+        counter += 1;
+    } else {
+        break;
+    }
+}
+
+let amount_buttons = counter;
+let array = [];
+let array_src = [];
+let array2 = [];
+let array3 = [];
+let array4 = [];
+
+for (let i = 1; i < amount_buttons + 1; i++) {
+    document.getElementById('cont-sound=').id = `cont-sound=${i}`;
+    document.getElementById('p-sound=').id = `p-sound=${i}`;
+    document.getElementById('checkbox=').id = `checkbox=${i}`;
+    document.getElementById('button-start=').id = `button-start=${i}`;
+    array[i] = document.getElementById(`cont-sound=${i}`);
+    array2[i] = document.getElementById(`p-sound=${i}`);
+    array3[i] = document.getElementById(`checkbox=${i}`);
+    array4[i] = document.getElementById(`button-start=${i}`);
+    array_src[i] = (String(array[i].getAttribute('src')).split('.mp3')[0]).split('sounds/')[1];
+    let elem = array2[i];
+    let textElem = document.createTextNode(array_src[i]);
+    elem.appendChild(textElem);
+}
+
 let state = false;
 let state2 = false; 
 let state3 = false; 
+
 function click_button() {
     state = !state;
     if (state) {
@@ -156,6 +77,8 @@ function click_button() {
         area.classList.add("add-area2");
     }
 }
+
+let lol = 0;
 
 setInterval(function() {
     if (state2) {
@@ -175,5 +98,22 @@ setInterval(function() {
             remove.style.display = 'none';
             state3 = false;
         }, 225);
-    }  
+    }
+    
+    for (let i = 1; i < amount_buttons + 1; i++) {
+        if (array3[i].checked) {
+            array[i].setAttribute("loop", "loop");
+        } else {
+            array[i].removeAttribute("loop", "loop");
+        }           
+        array4[i].onclick = function() {
+            const audio = new Audio(array[i].getAttribute('src'));
+            audio.play();
+        }
+    }
 }, 10);
+
+function play() {
+    const audio = new Audio('sounds/o-privet.mp3');
+    audio.play();
+}
