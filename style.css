@@ -4,7 +4,11 @@ html, body {
     box-sizing: border-box;
     width: 100vw;
     height: 100vh;
+    background-color: #273b58;
 }
+
+
+/* background: linear-gradient(180deg, #364049, #1a7fb6); */
 
 .content {
     position: relative;
@@ -119,9 +123,10 @@ p {
     top: 20vh;
     display: flex;
     flex-wrap: wrap; 
+    /* justify-content: center; */
 }
 
-.button {
+/* .button {
     width: 100px;
     height: 75px;
     margin: 20px;
@@ -134,12 +139,53 @@ p {
     align-items: center;
 }
 
-.p-button {
+*/
+/* .p-button {
     font-family: 'Roboto', sans-serif; 
     font-size: 1.6em;
     margin-right: 10px;
     color: white;
     text-shadow: 6px 8px 10px rgba(0, 0, 0, 0.65);
+}  */
+
+.sound-box {
+    margin-top: 10px;
+    border: 1px solid black;
+    background: linear-gradient(45deg, #1eff00, #eeff00);
+    /* border-radius:0%; */
+    height: 100px;
+    padding: 7px;
+    position: relative;
+    border-radius: 20%;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.cont-sound {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.switch {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.text-buttons {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.5em;
+    position: absolute;
+    top: 50px;
+    left: 115px;
+}
+
+.button-start {
+    height: 32px;
+    position: absolute;
+    bottom: 10px;
+    border-radius: 20%;
+    border: none;
+    box-shadow: 3px 3px 3px;
 }
 
 .save {
@@ -160,4 +206,59 @@ p {
     height: 35px;
     background-color: red;
     margin-right: 160px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+.switch input {display:none;}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .1s;
+    transition: .1s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .1s;
+    transition: .1s;
+}
+  
+input:checked + .slider {
+    background-color: #2196F3;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
 }
