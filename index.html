@@ -20,31 +20,822 @@
         </div>
         <div class="container">
             <div class="flexcont">
-                <button onclick="play()" class="button"><p class="p-button">О, Привет!</p></button>
-                <button onclick="play2()" class="button"><p class="p-button">Повезло</p></button>
-                <button onclick="play3()" class="button"><p class="p-button">Демотив
-                    атор</p></button>
-                <button onclick="play4()" class="button"><p class="p-button">Амогус</p></button>
-                <button onclick="play5()" class="button"><p class="p-button">Не пробил</p></button>
-                <button onclick="play6()" class="button"><p class="p-button">To be Continued</p></button>
-                <button onclick="play7()" class="button"><p class="p-button">Страшно</p></button>
-                <button onclick="play8()" class="button"><p class="p-button">Казахстан</p></button>
-                <button onclick="play9()" class="button"><p class="p-button">Бабабой</p></button>
-                <button onclick="play10()" class="button"><p class="p-button">Киборг уб***</p></button>
-                <button onclick="play11()" class="button"><p class="p-button">Бээээ</p></button>
-                <button onclick="play12()" class="button"><p class="p-button">Цитата</p></button> 
-                <button onclick="play13()" class="button"><p class="p-button">Просто похлопаю</p></button>
-                <button onclick="play14()" class="button"><p class="p-button">Миссия из GTA</p></button>
-                <button onclick="play15()" class="button"><p class="p-button">Жуткий крик</p></button>
-                <button onclick="play16()" class="button"><p class="p-button">Это фиаско</p></button>
-                <button onclick="play17()" class="button"><p class="p-button">Даладно</p></button>
-                <button onclick="play18()" class="button"><p class="p-button">Мне под
-                    сказывает</p></button>
-                <button onclick="play19()" class="button"><p class="p-button">Жёсткий стример</p></button>
-                <button onclick="play20()" class="button"><p class="p-button">Есть пробитие</p></button>
-                <button onclick="play21()" class="button"><p class="p-button">На нас напали</p></button> 
-                <button onclick="play22()" class="button"><p class="p-button">Есть пробитие</p></button> 
-            </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/О, Привет!.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/смех.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/повезло.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/О повезло.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Вот это поворот!.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Вот это прикол!.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/To be continued.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/To be (лучше).mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/миссия из GTA.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Даладно!.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Но это не точно.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/ФБР врывается.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/ФБР (кратко).mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Windows.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/omg.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/ЛОХ.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Больно в ноге!.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Вы кто такие.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/amogus.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/run.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Муха вертолёт.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Бабабой.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Брээээ.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Всё будет.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Виалончель.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Да-Да.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Димоооон!!!.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Димон! (кратко).mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Единственное....mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Подсказывает.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Единственное....mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Ералаш.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Есть пробитие!.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Не пробил!.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Жуткий крик.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Жёсткий чел.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Испанцы!!!.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Казахстан.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Киборг уби^^^.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+                
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Киборг (кратко).mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Корова.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Ля ты крыса!.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/отмена МЕМ'а.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Дебилы.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Пример.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/ШИЗОФРЕНИЯ!.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Меня снайпнули.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Надо свалить.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/На нас напали!.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Ну на^^^.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/О винта!!!.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Отдай сало!!!.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Пельмени....mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Подсказывает.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Пожили и хватит.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Понимаю.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Пришёл, увидел.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Санечка!.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Санечка (кратко).mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Сильное заявл..mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Суслик.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Урок музыки!.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Цитата.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Чел хорош.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Это фиаско!.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/чин-чань-чюнь.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/Я принёс.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
+
+                <div class="sound-box">
+                    <audio id='cont-sound' src="sounds/страшно.mp3" class="cont-sound" controls></audio>
+                    
+                    <label class="switch">
+                        <input id="checkbox=" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <button id='button-start=' class='button-start'>Start</button>
+                    <p id='p-sound=' class="text-buttons"></p>
+                </div>
 
         </div>
     </div>
