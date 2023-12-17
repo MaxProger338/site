@@ -1,5 +1,5 @@
 console.log('start', localStorage.getItem('password'));
-let password_str = 'lol';
+let password_str = 'lolPy';
 
 if (localStorage.getItem('password') === 'false') {
     while (true) {
@@ -56,7 +56,7 @@ for (let i = 1; i < amount_buttons + 1; i++) {
     array2[i] = document.getElementById(`p-sound=${i}`);
     array3[i] = document.getElementById(`checkbox=${i}`);
     array4[i] = document.getElementById(`button-start=${i}`);
-    array_src[i] = (String(array[i].getAttribute('src')).split('.mp3')[0]).split('sounds/')[1];
+    array_src[i] = (String(array[i].getAttribute('src')).split('.mp3')[0]).split('/')[1];
     let elem = array2[i];
     let textElem = document.createTextNode(array_src[i]);
     elem.appendChild(textElem);
