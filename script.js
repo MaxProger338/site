@@ -1,5 +1,5 @@
 console.log('start', localStorage.getItem('password'));
-let password_str = 'lolPy';
+let password_str = 'kek';
 
 if (localStorage.getItem('password') === 'false') {
     while (true) {
