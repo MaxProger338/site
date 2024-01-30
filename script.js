@@ -1,5 +1,5 @@
 console.log('start', localStorage.getItem('password'));
-let password_str = 'kol';
+let password_str = 'wrg';
 
 if (localStorage.getItem('password') === 'false') {
     while (true) {
@@ -112,8 +112,3 @@ setInterval(function() {
         }
     }
 }, 10);
-
-function play() {
-    const audio = new Audio('sounds/o-privet.mp3');
-    audio.play();
-}
