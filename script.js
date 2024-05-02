@@ -1,5 +1,5 @@
 console.log('start', localStorage.getItem('password'));
-let password_str = 'gdr';
+let password_str = 'gdhr';
 
 if (localStorage.getItem('password') === 'false') {
     while (true) {
